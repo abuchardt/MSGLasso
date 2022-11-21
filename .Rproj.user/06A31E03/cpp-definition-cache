@@ -1,0 +1,139 @@
+[
+    {
+        "file": "/home/ann-sophie/wip/R/MSGLasso-master/src/MSGLassoV2.c",
+        "file_last_write": 1478605808.0,
+        "definitions": [
+            {
+                "usr": "c:@F@Xnorm",
+                "kind": 6,
+                "parent_name": "",
+                "name": "Xnorm(int, int, int, double *)",
+                "file": "/home/ann-sophie/wip/R/MSGLasso-master/src/MSGLassoV2.c",
+                "line": 26,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@CalBnorm",
+                "kind": 6,
+                "parent_name": "",
+                "name": "CalBnorm(int, int, double *, double *)",
+                "file": "/home/ann-sophie/wip/R/MSGLasso-master/src/MSGLassoV2.c",
+                "line": 36,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@CalMBnorm",
+                "kind": 6,
+                "parent_name": "",
+                "name": "CalMBnorm(int, int, double *)",
+                "file": "/home/ann-sophie/wip/R/MSGLasso-master/src/MSGLassoV2.c",
+                "line": 51,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@SoftShrink",
+                "kind": 6,
+                "parent_name": "",
+                "name": "SoftShrink(double, double)",
+                "file": "/home/ann-sophie/wip/R/MSGLasso-master/src/MSGLassoV2.c",
+                "line": 67,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@Assign",
+                "kind": 6,
+                "parent_name": "",
+                "name": "Assign(int, int, double *, double *)",
+                "file": "/home/ann-sophie/wip/R/MSGLasso-master/src/MSGLassoV2.c",
+                "line": 88,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@Assignnorm",
+                "kind": 6,
+                "parent_name": "",
+                "name": "Assignnorm(int, int, double *, double *)",
+                "file": "/home/ann-sophie/wip/R/MSGLasso-master/src/MSGLassoV2.c",
+                "line": 98,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@Dist",
+                "kind": 6,
+                "parent_name": "",
+                "name": "Dist(int, int, double *, double *)",
+                "file": "/home/ann-sophie/wip/R/MSGLasso-master/src/MSGLassoV2.c",
+                "line": 108,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@UpdateBeta",
+                "kind": 6,
+                "parent_name": "",
+                "name": "UpdateBeta(int, int, int, int, int, double, double *, double *, double *, double *, double *, double *, double *, int, int, double *, int, int *, int *, int *, double *, double *)",
+                "file": "/home/ann-sophie/wip/R/MSGLasso-master/src/MSGLassoV2.c",
+                "line": 126,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@Cal_grpWTs",
+                "kind": 6,
+                "parent_name": "",
+                "name": "Cal_grpWTs(int *, int *, int *, int *, int *, int *, double *, int *, int *)",
+                "file": "/home/ann-sophie/wip/R/MSGLasso-master/src/MSGLassoV2.c",
+                "line": 217,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@Find_PQ_Coord_Grps",
+                "kind": 6,
+                "parent_name": "",
+                "name": "Find_PQ_Coord_Grps(int *, int *, int *, int *, int *, int *, int *, int *, int *, int *)",
+                "file": "/home/ann-sophie/wip/R/MSGLasso-master/src/MSGLassoV2.c",
+                "line": 274,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@Find_GR_Coord_Grps",
+                "kind": 6,
+                "parent_name": "",
+                "name": "Find_GR_Coord_Grps(int *, int *, int *, int *, int *, int *, int *, int *, int *, int *)",
+                "file": "/home/ann-sophie/wip/R/MSGLasso-master/src/MSGLassoV2.c",
+                "line": 321,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@MSGLasso",
+                "kind": 6,
+                "parent_name": "",
+                "name": "MSGLasso(int *, int *, int *, int *, int *, double *, double *, double *, int *, int *, int *, int *, int *, int *, double *, double *, double *, double *, int *, double *, double *)",
+                "file": "/home/ann-sophie/wip/R/MSGLasso-master/src/MSGLassoV2.c",
+                "line": 376,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@MSGLasso_Ini",
+                "kind": 6,
+                "parent_name": "",
+                "name": "MSGLasso_Ini(int *, int *, int *, int *, int *, double *, double *, double *, int *, int *, int *, int *, int *, int *, double *, double *, double *, double *, double *, int *, double *, double *)",
+                "file": "/home/ann-sophie/wip/R/MSGLasso-master/src/MSGLassoV2.c",
+                "line": 606,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    }
+]

@@ -1,0 +1,119 @@
+library(ilasso)
+
+path <- "/home/ann-sophie/wip/lasso/interactions/multivariate/simulations/"
+
+# Gaussian
+p <- 600
+q <- 10
+n <- 200
+R <- 10
+
+#====================== Scenario A
+
+scena <- "A"
+
+# Effect sizes (a)
+beta11 <- 1 # X1 påvirker Y1
+beta21 <- 1 # X2 påvirker Y1
+theta121 <- 1 # VV mellem X1 og X2 på Y1
+sigma2 <- 1
+
+
+# milasso
+set.seed(1)
+for (r in 1:R) {
+  cat("Aa r: ", r, "/", R, "\n")
+  source(paste0(path, "datagen.R"))
+  #cat(mean(X))
+  fit <- milasso(X = X, Y = Y, seed = NULL)
+  #cat(fit$coef1[1,1])
+  save(fit, file = paste0(path, "output/fitSS",r,"scen", scena, "a.rda"))
+}
+
+# Effect sizes (b)
+beta11 <- .5 # X1 påvirker Y1
+beta21 <- .5 # X2 påvirker Y1
+theta121 <- .5 # VV mellem X1 og X2 på Y1
+sigma2 <- .5
+
+source("/home/ann-sophie/wip/lasso/interactions/multivariate/simulations/datagen.R")
+
+# milasso
+for (r in 1:R) {
+  cat("Ab r: ", r, "/", R, "\n")
+  fit <- milasso(X = X, Y = Y, seed = r)
+  save(fit, file = paste0(path, "output/fitSS",r,"scen", scena, "b.rda"))
+}
+
+# Effect sizes (c)
+beta11 <- 2 # X1 påvirker Y1
+beta21 <- 2 # X2 påvirker Y1
+theta121 <- 2 # VV mellem X1 og X2 på Y1
+sigma2 <- 2
+
+source("/home/ann-sophie/wip/lasso/interactions/multivariate/simulations/datagen.R")
+
+# milasso
+for (r in 1:R) {
+  cat("Ac r: ", r, "/", R, "\n")
+  fit <- milasso(X = X, Y = Y, seed = r)
+  save(fit, file = paste0(path, "output/fitSS",r,"scen", scena, "c.rda"))
+}
+
+#====================== Scenario B
+
+scena <- "B"
+
+# Effect sizes (a)
+beta11 <- 1 # X1 påvirker Y1
+beta21 <- 1 # X2 påvirker Y1
+beta32 <- 1 # X3 påvirker Y2
+beta42 <- 1 # X4 påvirker Y2
+theta121 <- 1 # VV mellem X1 og X2 på Y1
+theta342 <- 1 # VV mellem X3 og X4 på Y2
+sigma2 <- 1
+
+source("/home/ann-sophie/wip/lasso/interactions/multivariate/simulations/datagen.R")
+
+# milasso
+for (r in 1:R) {
+  cat("Ba r: ", r, "/", R, "\n")
+  fit <- milasso(X = X, Y = Y, seed = r)
+  save(fit, file = paste0(path, "output/fitSS",r,"scen", scena, "a.rda"))
+}
+
+# Effect sizes (b)
+beta11 <- .5 # X1 påvirker Y1
+beta21 <- .5 # X2 påvirker Y1
+beta32 <- .5 # X3 påvirker Y2
+beta42 <- .5 # X4 påvirker Y2
+theta121 <- .5 # VV mellem X1 og X2 på Y1
+theta342 <- .5 # VV mellem X3 og X4 på Y2
+sigma2 <- .5
+
+source("/home/ann-sophie/wip/lasso/interactions/multivariate/simulations/datagen.R")
+
+# milasso
+for (r in 1:R) {
+  cat("Bb r: ", r, "/", R, "\n")
+  fit <- milasso(X = X, Y = Y, seed = r)
+  save(fit, file = paste0(path, "output/fitSS",r,"scen", scena, "b.rda"))
+}
+
+# Effect sizes (c)
+beta11 <- 2 # X1 påvirker Y1
+beta21 <- 2 # X2 påvirker Y1
+beta32 <- 2 # X3 påvirker Y2
+beta42 <- 2 # X4 påvirker Y2
+theta121 <- 2 # VV mellem X1 og X2 på Y1
+theta342 <- 2 # VV mellem X3 og X4 på Y2
+sigma2 <- 2
+
+source("/home/ann-sophie/wip/lasso/interactions/multivariate/simulations/datagen.R")
+
+# milasso
+for (r in 1:R) {
+  cat("Bc r: ", r, "/", R, "\n")
+  fit <- milasso(X = X, Y = Y, seed = r)
+  save(fit, file = paste0(path, "output/fitSS",r,"scen", scena, "c.rda"))
+}
